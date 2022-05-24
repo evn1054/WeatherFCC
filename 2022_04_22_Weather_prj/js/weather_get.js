@@ -14,14 +14,14 @@ fetch(`https://weather-proxy.freecodecamp.rocks/api/current?lat=${lat}&lon=${lon
 
             const iconPath = "https://cdn.freecodecamp.org/weather-icons/";
             const iconObj = {
-                [`${iconPath}01d.png`]: "./img/01d.svg",
-                [`${iconPath}02d.png`]: "./img/02d.svg",
-                [`${iconPath}03d.png`]: "./img/03.svg",
-                [`${iconPath}03n.png`]: "./img/03.svg",
-                [`${iconPath}04d.png`]: "./img/04.svg",
-                [`${iconPath}04n.png`]: "./img/04.svg",
-                [`${iconPath}01n.png`]: "./img/01n.svg",
-                [`${iconPath}02n.png`]: "./img/02n.svg",
+                [`${iconPath}01d.png`]: "../2022_04_22_Weather_prj/img/01d.svg",
+                [`${iconPath}02d.png`]: "../2022_04_22_Weather_prj/img/02d.svg",
+                [`${iconPath}03d.png`]: "../2022_04_22_Weather_prj/img/03.svg",
+                [`${iconPath}03n.png`]: "../2022_04_22_Weather_prj/img/03.svg",
+                [`${iconPath}04d.png`]: "../2022_04_22_Weather_prj/img/04.svg",
+                [`${iconPath}04n.png`]: "../2022_04_22_Weather_prj/img/04.svg",
+                [`${iconPath}01n.png`]: "../2022_04_22_Weather_prj/img/01n.svg",
+                [`${iconPath}02n.png`]: "../2022_04_22_Weather_prj/img/02n.svg",
             }
             document.querySelector(".weather_img").innerHTML = `<img src = "${iconObj[data.weather[0].icon]}" />` 
     })
