@@ -23,7 +23,7 @@ fetch(`https://weather-proxy.freecodecamp.rocks/api/current?lat=${lat}&lon=${lon
                 [`${iconPath}01n.png`]: "../img/01n.svg",
                 [`${iconPath}02n.png`]: "../img/02n.svg",
             }
-            document.querySelector(".weather_img").innerHTML = `<img src = ".${iconObj[data.weather[0].icon]}" />` 
+            document.querySelector(".weather_img").innerHTML = `<img src = "${iconObj[data.weather[0].icon]}" />` 
     })
 
     .catch(function (){
